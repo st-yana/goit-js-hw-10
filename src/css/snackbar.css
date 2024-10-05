@@ -1,0 +1,87 @@
+.snackbar-main {
+  padding: 36px 156px;
+}
+
+.form {
+
+}
+
+.delay {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.delay-input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.delay-input:hover {
+  border: 1px solid #000;
+}
+
+.delay-input:focus-visible {
+  border: 1px solid #4e75ff;
+}
+
+fieldset {
+  margin-top: 16px;
+  padding: 14px 48px 8px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+fieldset:hover {
+  border: 1px solid  #000;
+}
+
+legend {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+fieldset label {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+}
+
+input[type="radio"] {
+  margin: 12px 16px 12px 12px;
+  padding: 12px;
+  width: 20px;
+  height: 20px;
+}
+
+.state-radio-button {
+  margin-right: 48px;
+}
+
+.snackbar-button {
+  margin-top: 24px;
+  border-radius: 8px;
+  padding: 8px 99px;
+  background: #4e75ff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.snackbar-button:hover {
+  background: #6c8cff;
+}

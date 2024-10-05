@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8' />
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <title>Page 3</title>
+  <link rel='stylesheet' href='./css/styles.css' />
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'
+        rel='stylesheet'>
+</head>
+<body>
+<main class='snackbar-main'>
+  <form class='form'>
+    <label class='delay'>
+      Delay (ms)
+      <input class='delay-input' type='number' name='delay' required />
+    </label>
+
+    <fieldset>
+      <legend>State</legend>
+      <label class='state-radio-button'>
+        <input class='' type='radio' name='state' value='fulfilled' required />
+        Fulfilled
+      </label>
+      <label>
+        <input type='radio' name='state' value='rejected' required />
+        Rejected
+      </label>
+    </fieldset>
+
+    <button class='snackbar-button' type='submit'>Create notification</button>
+  </form>
+</main>
+</body>
+<script src='./js/2-snackbar.js' type='module'></script>
+</html>
