@@ -8,8 +8,8 @@ const radios = document.querySelectorAll('input[name="state"]');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  const delayMs = Number.parseInt(input.value);
-  let promiseType = form.state.value;
+  const delayMs = Number.parseInt(input.value) * 1000;
+  let promiseType;
 
   radios.forEach(radio => {
     if (radio.checked) {
@@ -24,12 +24,15 @@ form.addEventListener('submit', (e) => {
       } else {
         reject(delayMs);
       }
-    }, delayMs * 1000);
+
+    }, delayMs);
   }).then((successValue) => {
     iziToast.success({ message: `✅ Fulfilled promise in ${successValue}ms`, position: 'topRight' });
   }).catch((successValue) => {
     iziToast.error({ message: `❌ Rejected promise in ${successValue}ms`, position: 'topRight' });
-  });
+  })
+
+  form.reset();
 });
 
 
